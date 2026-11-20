@@ -1,0 +1,6 @@
+name = "SamMonolayers"
+version = "0.1.0"
+defaultTargets = ["SamMonolayers"]
+
+[[lean_lib]]
+name = "SamMonolayers"

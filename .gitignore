@@ -1,0 +1,14 @@
+# Lean / Lake build cache
+/.lake
+/.lean4
+*.olean
+*.ilean
+*.c
+*.o
+*.dynlib
+
+# Editor / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
