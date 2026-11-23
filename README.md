@@ -2,15 +2,19 @@
 
 自组装单分子层（SAM）综述论文 + Lean 4 形式化核验骨架。
 
+**English version: [README.en.md](./README.en.md)**
+
 本仓库沉淀「自组装单分子层：分子精度表面化学」课题的
-研究内容、结论与可机器核验的形式化命题，按语义化版本持续维护。
+研究内容、结论与可机器核验的形式化命题，按语义化版本持续维护，
+并提供中英双语论文与文档。
 
 ## 目录结构
 
 ```
 sam-monolayers-review/
 ├── paper/
-│   └── sam_monolayers_review.md   # 完整综述论文
+│   ├── sam_monolayers_review.md    # 中文综述
+│   └── sam_monolayers_review_en.md # English review
 ├── SamMonolayers.lean              # Lean 库根模块
 ├── SamMonolayers/
 │   ├── Basic.lean
@@ -20,7 +24,7 @@ sam-monolayers-review/
 ├── lake-manifest.json
 ├── .github/workflows/              # Lean CI
 ├── CHANGELOG.md
-└── README.md
+└── README.md / README.en.md
 ```
 
 ## 论文要点
@@ -47,11 +51,18 @@ lake build
 1. 发展时间线严格递增（`chronology_ordered`）：1980 → 1983 → 1996 → 2026；
 2. 结构参数：倾斜角 30°、Au 最近邻 288 pm、硫晶格 500 pm；
 3. 链长–厚度记录 `SamSystem` 与厚度单调链；
-4. 锚定体系 `SamAnchor` 与硫–金键标志 `usesSulfurBond`；
+4. 锚定体系 `SamAnchor` 与 `usesSulfurBond`；
 5. 汇总命题 `paper_evidence_summary`。
 
 > 表面化学与材料结论以同行评审文献为准；本工程不把化学机制
 > 当作可由算术证明的命题。工程内 `sorry` / `admit` / `axiom` 数量为 0。
+
+## 双语版本管理
+
+- 论文：`paper/sam_monolayers_review.md`（中文）与 `paper/sam_monolayers_review_en.md`（英文）内容对齐；
+- 文档：`README.md`（中文）与 `README.en.md`（英文）互相链接；
+- 变更日志：`CHANGELOG.md` 同时保留中英两段说明；
+- 论文修订时应同步更新两个语言版本，提交信息在 subject 中注明 `docs(zh)` / `docs(en)`。
 
 ## 版本维护
 

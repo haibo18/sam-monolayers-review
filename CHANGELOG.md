@@ -3,6 +3,22 @@
 本仓库所有显著变更均记录于此。格式遵循
 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.0.0/)，
 版本号遵循 [Semantic Versioning](https://semver.org/lang/zh-CN/)。
+All notable changes are recorded here; format follows
+[Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+versioning follows [Semantic Versioning](https://semver.org/).
+
+## [0.2.0] - 2026-11-24
+
+### Added
+
+- 英文版综述 `paper/sam_monolayers_review_en.md`（与中文 `sam_monolayers_review.md` 内容对齐）。
+- 英文项目说明 `README.en.md`，与中文 `README.md` 互相链接。
+- Added English review `paper/sam_monolayers_review_en.md` and English README `README.en.md`, kept in sync with the Chinese versions.
+
+### Changed
+
+- 中文 `README.md` 顶部增加英文版链接。
+- Chinese `README.md` now links to the English version.
 
 ## [0.1.0] - 2026-11-21
 
